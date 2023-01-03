@@ -1,0 +1,789 @@
+
+
+/* the body styling */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kaisei Tokumin', serif;
+    color: black;
+    
+    
+}
+
+/* */
+.front_page{
+    
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(nevs.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+nav{
+    display: flex;
+    padding: 3% 6%;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
+
+nav img{
+    width: 100px;
+}
+.front_cover {
+    flex: 1;
+    text-align: right;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.front_cover ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 13px;
+    position: relative;
+}
+
+.mune ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 13px;
+    position: relative;
+}
+
+li{
+    color: #ffffff;
+}
+
+.front_cover ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  
+}
+.front_page ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:   #ffff33;
+    display: block;
+    margin: auto;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.front_page ul li:hover::after{
+    width: 100%;
+}
+
+.text_box {
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text_box h2{
+    font-size: 60px;
+}
+
+.text_box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+}
+
+.text_box h1{
+    color: #ffe46c;
+}
+
+.front_cover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+.front_page .fa{
+    color: #ffffff;
+    
+}
+
+.front_page{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.About_us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background:  #3a6e94;
+}
+.About_us h1{
+    font-size: 65px;
+    font-weight: 600;
+}
+.About_us p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+h3{
+    color: #3990b5;
+}
+
+.tittle h2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+   
+}
+
+
+
+li ul{
+    color: #ffffff;
+}
+.image_tablet {
+    flex-basis: 35%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 50px rgb(201, 199, 117);
+    
+}
+
+.laptop {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 04s;
+    
+}
+
+.laptop :hover{
+  box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
+
+.image_tablet:hover{
+    box-shadow: 0px 10px 50px rgba(60, 40, 243, 2);
+}
+
+.text p {
+    text-align: center;
+   
+}
+.text_notes {
+   
+  
+    padding-bottom: 50px;
+}
+
+
+.text_notes h3{
+   
+    text-align: center;
+    
+}
+
+
+.text_notes p{
+   
+    text-align: center;
+    
+}
+
+.email_text {
+    color: #ffffff;
+    text-align: center;
+}
+
+.Message {
+    padding-bottom: 60px;
+ 
+    text-align: center;
+}
+#submit{
+    text-align: center;
+   
+}
+
+.btn {
+   
+ 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px
+   
+}
+
+.RESET_bnt {
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 5px solid red; 
+    transition-duration: 0.4s;
+}
+
+.submit_bnt {
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 5px solid green; 
+    transition-duration: 0.4s;
+}
+
+.submit_bnt:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: green;
+}
+
+.RESET_bnt:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+    background-color: red;
+}
+
+
+.page {
+    color: #ffffff;
+}
+
+.address p{
+    color: yellow;
+    text-align: center;
+}
+
+.contact {
+    color: yellow;
+    
+}
+.contact p{
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lora";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.inform {
+    color: #666666;
+}
+
+.row  {
+   
+    background-color: lightblue;
+    padding-bottom: 10px;
+    
+}
+.contact_use{
+    display: inline-block;
+    
+    padding:10px 150px;
+    position: relative;
+    text-align: center;
+}
+.tel {
+    padding: 5px !important;
+}
+ 
+
+.foot{
+    background-color: lightblue;
+}
+
+.tittle h2{
+    color: #154d90;
+}
+
+.About_us p{
+    color: white;
+}
+
+.text_box p{
+    color:  #ffffff;
+}
+.address.links {
+    color: black;
+    padding: 0px 600px;
+   
+    line-height: 30px;
+}
+    
+.home_about a{
+    padding-bottom: 100px;
+}
+.subtilte h2 {
+    color: white;
+   
+    
+}
+
+.row .contact_use{
+    color: #5040ec;
+}
+.address a {
+    line-height: 30px;
+    padding: 10px 150px;
+}
+.fa-facebook-official {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+
+}
+
+.get_in_touch {
+    
+    padding-top: 100px;
+    padding: 5px 1000px;
+
+}
+
+.contact_use_link .links a {
+    padding-bottom: 100px;
+    padding: 10px 600px;
+}
+
+.get_connect {
+    padding: 10px 1000px;
+}
+
+.text p{
+    color: white;
+}
+
+.page p{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1074px) {
+    .front_page a{
+        
+        width: 5px;
+        height: 5px;
+        
+    }
+    .front_cover ul li a{
+   
+        font-size: 10px;
+        border: 1px solid black;
+  
+}
+address.links {
+    
+    padding: 0px 100px;
+   
+    line-height: 10px;
+}
+    
+}
+
+@media screen and (max-width: 590px) {
+    .front_page a{
+        width: 5px;
+        height: 5px;
+      
+    }
+    .front_cover ul li a{
+        border: 1px solid black;
+        font-size: 8px;
+        border-radius: 8px;
+  
+}
+
+address.links {
+    padding: 0px 90px;
+    line-height: 10px;
+}
+
+
+    
+}
+
+
+@media screen and (max-width: 538px) {
+    .front_page a{
+        width: 5px;
+        height: 5px;
+        position: relative;
+      
+    }
+    .front_cover ul li a{
+        border: 1px solid black;
+        font-size: 8px;
+        border-radius: 6px;
+  
+}
+.address .links {
+    
+    padding: 0px 90px;
+   
+    line-height: 6px;
+}
+
+    
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+   
+}
+
+
+/*our work images , h3 and h1*/
+
+
+.work_image img{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+
+.work_image img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+h3{
+    font-size: 65px;
+    text-align: center;
+}
+
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:  #ffff33;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: yellow;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+/* footer style */
+
+.footer_container
+{
+    max-width: 1170px;
+   
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+.footer {
+    background-color:  #24262b;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer_col {
+    width: 25%;
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
+
+.footer_col h4{
+    font-size: 20px;
+    color:  #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:  #24262b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.footer_col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:  #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer_col ul li a:hover{
+    color: #ffe46c;
+    padding-left: 10px;
+    
+}
+
+.footer_col .social_link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.footer_col .social_link a:hover{
+    color: #ffe46c;
+    background-color: white;
+}
+
+/* responsive*/
+@media(max-width:767px){
+    .footer_col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer_col{
+        width: 100%;
+       
+    }
+    
+}
+
+/* the contact style*/
+.text_contact {
+    text-align: center;
+    
+}
+.text_contact p{
+   color:  #ffffff;
+}
+
+.contact a{
+    color:  #ffffff;
+}
+
+.form {
+    align-items: center;
+       
+}
